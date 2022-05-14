@@ -1,0 +1,103 @@
+https://code.visualstudio.com/ (Install)
+https://nodejs.org/en/ (Install)
+https://git-scm.com/downloads (Install)
+https://github.com/ (Create Account)
+https://github.com/Aakashdeveloper (Follow)
+
+> Add To Chrome
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+#Vs Code Extensions
+> vscode-icons
+> gitHistory
+> gitlens
+> tabNine
+> eslint
+> spellCheck
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Email With Node(nodemailer)
+Node-Es6(.babel)
+MongoDb Basic >27017  (local/cloud)
+Api with NodeJS(Rest)>1
+Testing
+DashBoard(Crud)
+Github
+--Deployment of app---
+Heroku
+Pm2
+Docker
+Nginx
+Login/Logout(JWT)
+GraphQl API
+Chatapp
+
+-----EXTRA-------
+Jenkins
+Swagger
+Redis  > 6379
+RedisWithMongo
+ImageUpload
+Zomato App backend
+Oauth(with github)
+Oauth(with google)
+TelegramChat
+Paytm-Payment
+NodeJs with postgres
+FIREBASE
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+
+NodeJs
+> Single Threaded async non-blocking I/O
+C++ + Libu
+process over v8 engine
+> open source (any one can contribute to development)
+
+npm(1,961,637)
+> node package manager
+
+///////////JSON//////
+JavaScript Object Notation
+[
+    {
+        "name":"John",
+        "class":"React",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Ankit",
+        "class":"Node",
+        "collage":"MDU"
+    }
+]
+
+////////////////////////////////
+        Package.json
+////////////////////////////////
+> Entry point to the application
+> metadata (name,description,version)
+> scripts (start,test,run)
+> package/dependencies
+
+//////////
+Step to generate package.json
+//////////
+**Node must be installed in laptop
+> go inside the folder using cmd/terminal
+> npm init
+> Answer all questions
+> type "yes"
+
+//////////
+Step to install package
+//////////
+**Node must be installed in laptop
+> go inside the folder using cmd/terminal
+> npm i packagename
