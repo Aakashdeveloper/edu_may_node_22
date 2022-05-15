@@ -1,0 +1,11 @@
+> https://www.mongodb.com/try/download/community
+    > download & install with default settings
+
+# window
+> create folder in C drive by the name of 'data'
+> inside data create folder by the name of 'db'
+C:\data\db
+
+# mac/linux
+> open terminal
+> mkdir data/db
