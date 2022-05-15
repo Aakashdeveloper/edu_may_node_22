@@ -18,6 +18,7 @@ https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibn
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
+
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Email With Node(nodemailer)
@@ -101,3 +102,47 @@ Step to install package
 **Node must be installed in laptop
 > go inside the folder using cmd/terminal
 > npm i packagename
+
+iffi
+
+//////////
+> Ecma Script (standard of coding)
+es5
+es6
+
+//es5 
+function add(a,b){
+    return a+b
+}
+add(1,2)
+
+//es6 
+let add = (a,b) => {return a+b}
+add(1,2)
+
+///////
+# Local dependencies
+> They are local to the folder
+> Only use inside the particular folder
+> Package name added to package.json
+
+# Dev dependencies
+> Dependencies only require at time of development
+> npm i mocha --save-dev
+
+# Global Dependencies
+> Install in laptop irrespective of any folder
+> packages that are require before application run
+  should install global
+> They will not add in package.json
+> require admin access to install
+
+# window
+> open cmd as admin
+> npm i -g packagename
+
+# mac/linux
+> open terminal
+> sudo npm i -g packagename
+
+npm i -g nodemon
