@@ -146,3 +146,14 @@ add(1,2)
 > sudo npm i -g packagename
 
 npm i -g nodemon
+
+//////////
+//es5
+let age = 10
+let out = "my age is "+age
+"my age is 10"
+
+//es6
+let age = 10
+let out = `my age is ${age}`
+"my age is 10"
