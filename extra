@@ -22,6 +22,7 @@ Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Email With Node(nodemailer)
+
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
 Api with NodeJS(Rest)>1
@@ -157,3 +158,19 @@ let out = "my age is "+age
 let age = 10
 let out = `my age is ${age}`
 "my age is 10"
+
+
+function add(a,b){
+return a+b
+}
+
+add(1,2)
+
+/////////////
+params
+> pass after /
+> we need to define params
+> Params are complusory if we define
+queryParams
+> pass after ?
+> no need to define

@@ -9,3 +9,97 @@ C:\data\db
 # mac/linux
 > open terminal
 > mkdir data/db
+
+
+RollNo | Hindi | English | Computer
+  1    |  80   |         |   90
+  2    |       |  76     |
+  3    |  90   |         |   
+
+NoSql(MongoDB)
+[
+    {
+        rollNo:1,
+        Hindi:80,
+        Computer:90
+    },
+    {
+        rollNo:2,
+        English:76
+    },
+    {
+        rollNo:3,
+        Hindi:76
+    }
+]
+
+SQL        MongoDb
+Database   Database
+Table      Collection
+Row        Document
+-------------------
+Select    Find
+Insert    Insert
+Update    Update
+Delete    Remove
+
+/////////////////////////////////////
+Default: 27017
+
+///Open First Cmd
+# window
+> go inside path (C:\programfile\mongodb\server\5.3\bin)
+> mongod
+(this will start mongodb server)
+> do not close this
+
+///Open Second Cmd
+> go inside path (C:\programfile\mongodb\server\5.3\bin)
+> mongo
+(this will start mongo cli)
+
+
+#Mac/linux
+> open terminal
+> mongod --dbpath data/db
+(this will start mongodb server)
+
+> open new terminal
+> mongo
+(this will start mongodb cli)
+
+
+//////////To See All Dbs
+> show dbs
+
+//////Go Inside DB
+> use dbname
+
+//////////To See All Collection
+> show collections
+
+/////To Select(see) All Data
+> db.collectionName.find()
+
+//////////Step to Create Db
+> use dbname
+
+/////////Step to Create collections
+> db.user.insert({name:'Nikita'})
+> db.user.insert({name:'Amit'})
+> db.user.insert({_id:1,name:'John'})
+> db.user.insert({_id:2,name:'Shruti'})
+
+_id 
+> primary key
+> No Duplicate value
+> 12byte
+    > 5bytes Random Number
+    > 3bytes Series
+    > 4bytes TimeStamp
+
+/////To Select(see) Data wrt to condition
+> db.collectionName.find({category:1})
+> db.collectionName.find({category:1,name:'abc'})
+
+db.products.find({category_id:2}).pretty()

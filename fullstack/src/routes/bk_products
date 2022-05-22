@@ -1,0 +1,22 @@
+let express = require('express');
+let productRouter = express.Router()
+
+function router(menu){
+    productRouter.route('/')
+    .get((req,res) => {
+        //res.send(products);
+        // products:products  == products
+        
+        res.render('product',{title:'Products Page',products,menu})
+    })
+
+    productRouter.route('/details')
+    .get((req,res) => {
+        res.send('Products Details');
+    })
+
+    return productRouter
+}
+
+
+module.exports = router

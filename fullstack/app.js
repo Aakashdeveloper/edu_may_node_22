@@ -5,8 +5,14 @@ let dotenv = require('dotenv');
 dotenv.config()
 let port = process.env.PORT || 3500;
 let morgan = require('morgan');
-let categoryRouter = require('./src/routes/categoryRoutes')
-let productRouter = require('./src/routes/productRoutes');
+let menu = [
+    {link:'/',name:'Home'},
+    {link:'/category',name:'Category'},
+    {link:'/products',name:'Products'}
+]
+
+let categoryRouter = require('./src/routes/categoryRoutes')(menu);
+let productRouter = require('./src/routes/productRoutes')(menu);
 
 ///static file path
 app.use(express.static(__dirname+'/public'));
@@ -21,7 +27,7 @@ app.use(morgan('common',{stream: fs.createWriteStream('./app.log')}));
 
 app.get('/',(req,res) => {
     //res.send('Hii To Node Express');
-    res.render('first',{title:'Home Page'})
+    res.render('first',{title:'Home Page',menu})
 })
 
 app.use('/category',categoryRouter)
