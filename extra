@@ -18,16 +18,18 @@ https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibn
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
-
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
+Redis  > 6379
+Node-Es6(.babel)
 Email With Node(nodemailer)
 
-Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
 Api with NodeJS(Rest)>1
+Swagger
 Testing
 DashBoard(Crud)
+
 Github
 --Deployment of app---
 Heroku
@@ -40,8 +42,8 @@ Chatapp
 
 -----EXTRA-------
 Jenkins
-Swagger
-Redis  > 6379
+
+
 RedisWithMongo
 ImageUpload
 Zomato App backend
@@ -174,3 +176,18 @@ params
 queryParams
 > pass after ?
 > no need to define
+
+Redis
+Memcache
+
+//////////
+> redis-server
+> redis-cli (6379) 
+
+KEYS *
+set key value
+get key
+del key
+FLUSHALL
+
+https://support.google.com/accounts/answer/185833?hl=en

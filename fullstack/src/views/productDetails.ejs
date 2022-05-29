@@ -99,9 +99,12 @@
               <h3><%=products[i].product_name%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=products[i].category%></span></h4><h4>
+                  <h4><span class="label label-default"><%=products[i].category%></span></h4>
+                  <h4><span class="label label-default"><%=products[i].Color%></span></h4>
+                  <h4><span class="label label-default"><%=products[i].Size%></span></h4>
+                  <h4>
                   <small style="font-family:courier,'new courier';" class="text-muted"><%=products[i].Brand?products[i].Brand:products[i].company%>  • 
-                    <a href="/products/details/<%=products[i].id%>" class="text-muted">Read More</a></small>
+                    </small>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>

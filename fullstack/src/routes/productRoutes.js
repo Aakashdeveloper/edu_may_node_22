@@ -37,9 +37,19 @@ function router(menu){
         
     })
 
-    productRouter.route('/details')
+    productRouter.route('/details/:id')
     .get((req,res) => {
-        res.send('Products Details');
+        let {id} = req.params
+        mongodb.connect(mongoUrl,(err,dc) => {
+            if(err){
+                res.status(500).send('Error While Connecting')
+            }else{
+                let dbObj = dc.db('edumay')
+                dbObj.collection('products').find({id:Number(id)}).toArray((err,products) => {
+                    res.render('productDetails',{title:'Products Details Page',products,menu})
+                })
+            }
+        })
     })
 
     return productRouter
