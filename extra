@@ -3,6 +3,7 @@ https://nodejs.org/en/ (Install)
 https://git-scm.com/downloads (Install)
 https://github.com/ (Create Account)
 https://github.com/Aakashdeveloper (Follow)
+https://www.postman.com/downloads/ (Install)
 
 > Add To Chrome
 https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
@@ -23,8 +24,8 @@ Third Party Api (Weather Api)
 Redis  > 6379
 Node-Es6(.babel)
 Email With Node(nodemailer)
-
 MongoDb Basic >27017  (local/cloud)
+
 Api with NodeJS(Rest)>1
 Swagger
 Testing
@@ -36,14 +37,12 @@ Heroku
 Pm2
 Docker
 Nginx
+
 Login/Logout(JWT)
 GraphQl API
 Chatapp
-
 -----EXTRA-------
 Jenkins
-
-
 RedisWithMongo
 ImageUpload
 Zomato App backend
