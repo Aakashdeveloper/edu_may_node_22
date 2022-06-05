@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apiWithoutUi.js",
-    "dev": "nodemon apiWithoutUi.js"
+    "start": "node apiwithui.js",
+    "dev": "nodemon apiWithoutUi.js",
+    "ui": "nodemon apiwithui.js",
+    "test":"mocha --timeout 10000"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,187 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "description":"This is the Api for Users",
+        "version":"__version__"
+    },
+    "tags":[
+        {
+            "name":"PUBLIC ROUTE",
+            "description":"PUBLIC ROUTE"
+        }
+    ],
+    "paths":{
+        "/health":{
+            "summary":"Testing Health Check",
+            "get":{
+                "description":"Testing Health Of App",
+                "tags":["PUBLIC ROUTE"],
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        },
+        "/users":{
+            "summary":"Fetching User Data",
+            "get":{
+                "description":"Testing Health Of App",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"query",
+                        "name":"role",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose role as admin or user"
+                    },
+                    {
+                        "in":"query",
+                        "name":"city",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose role as city"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        },
+        "/user/{id}":{
+            "summary":"Fetching User Data",
+            "get":{
+                "description":"Testing Health Of App",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"path",
+                        "name":"id",
+                        "required":true,
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Enter User Id"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Get Particular User"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        },
+        "/addUser":{
+            "summary":"Add New User",
+            "post":{
+                "description":"Add New User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name":"Arushi",
+                                "city":"Venice",
+                                "phone":654754744,
+                                "role":"User",
+                                "isActive":true
+
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        },
+        "/updateUser":{
+            "summary":"Update User",
+            "put":{
+                "description":"Update User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"629cd102033659af16dd94af",
+                                "name":"Arushi",
+                                "city":"Venice",
+                                "phone":654754744,
+                                "role":"User",
+                                "isActive":true
+
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        },
+        "/deleteUser":{
+            "summary":"Delete User",
+            "delete":{
+                "description":"Delete User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"629cd102033659af16dd94af"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"Health Check Fail"
+                    }
+                }
+            }
+        }
+    }
+}

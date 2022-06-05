@@ -5,7 +5,7 @@ const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const mongoUrl = "mongodb://localhost:27017";
+const mongoUrl = "mongodb+srv://local:test12345@cluster0.f8vmc.mongodb.net";
 let db;
 let col_name = "dashboard";
 let swaggerUi = require('swagger-ui-express');
@@ -19,8 +19,26 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(cors())
 
+///static file path
+app.use(express.static(__dirname+'/public'));
+//html file path
+app.set('views','./src/views')
+//view engine
+app.set('view engine', 'ejs')
+
 app.get('/health',(req,res)=>{
     res.status(200).send('Health Check ok')
+})
+
+app.get('/new',(req,res) => {
+    res.render('forms')
+})
+
+app.get('/',(req,res)=>{
+    db.collection(col_name).find({}).toArray((err,result) => {
+        if(err) throw err;
+        res.render('index',{data:result})
+    })
 })
 
 app.get('/users',(req,res) => {
@@ -64,9 +82,17 @@ app.get('/user/:id',(req,res) => {
 
 // add user
 app.post('/addUser',(req,res) => {
-    db.collection(col_name).insert(req.body,(err,result) => {
+    const data = {
+        "name":req.body.name,
+        "city":req.body.city,
+        "phone":req.body.phone,
+        "role":'User',
+        "isActive":true
+    }
+    db.collection(col_name).insert(data,(err,result) => {
         if(err) throw err;
-        res.status(200).send('Data Added')
+        //res.status(200).send('Data Added')
+        res.redirect('/')
     })
 })
 
@@ -101,7 +127,7 @@ app.delete('/deleteUser',(req,res) => {
 })
 
 //soft Delete // deactivate
-app.patch('/deactivateUser',(req,res) => {
+app.put('/deactivateUser',(req,res) => {
     db.collection(col_name).updateOne(
         {_id:mongo.ObjectId(req.body._id)},
         {
@@ -116,7 +142,7 @@ app.patch('/deactivateUser',(req,res) => {
 })
 
 //soft Delete // Activate
-app.patch('/activateUser',(req,res) => {
+app.put('/activateUser',(req,res) => {
     db.collection(col_name).updateOne(
         {_id:mongo.ObjectId(req.body._id)},
         {
