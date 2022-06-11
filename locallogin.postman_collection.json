@@ -1,0 +1,133 @@
+{
+	"id": "4734bf9f-0011-64eb-01cf-51b9e6d6be7e",
+	"name": "locallogin",
+	"description": "",
+	"order": [
+		"4832b506-7102-eb9f-54ee-b1920ee0a67b",
+		"745696d0-553d-3337-46ea-5ff8d466b820",
+		"24732238-6467-ce00-cf2f-62f7787ce40d",
+		"23912926-4708-2269-04fb-6adad480b2bb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1626657534796,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "23912926-4708-2269-04fb-6adad480b2bb",
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTViMjVjMzY0MWRmNzlmODFkY2IxOSIsImlhdCI6MTY0NTU4OTUxOSwiZXhwIjoxNjQ1Njc1OTE5fQ.fi9mVxgso3M7xmApm7Lx9XzQoilIuSMqy5ZMl3a3PWE\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTViMjVjMzY0MWRmNzlmODFkY2IxOSIsImlhdCI6MTY0NTU4OTUxOSwiZXhwIjoxNjQ1Njc1OTE5fQ.fi9mVxgso3M7xmApm7Lx9XzQoilIuSMqy5ZMl3a3PWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/auth/userinfo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "4734bf9f-0011-64eb-01cf-51b9e6d6be7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Userinfo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1645589889841,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "24732238-6467-ce00-cf2f-62f7787ce40d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/auth/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4734bf9f-0011-64eb-01cf-51b9e6d6be7e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1626658209792,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"email\":\"aarsh@gmail.com\",\"password\":\"12345678\"}"
+		},
+		{
+			"id": "4832b506-7102-eb9f-54ee-b1920ee0a67b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/auth/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "4734bf9f-0011-64eb-01cf-51b9e6d6be7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/auth/users",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1626657585513,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "745696d0-553d-3337-46ea-5ff8d466b820",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/auth/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4734bf9f-0011-64eb-01cf-51b9e6d6be7e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/auth/register",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1626657699650,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"name\":\"Deepika\", \"email\":\"deepika@gmail.com\",\"password\":\"12345678\",\"role\":\"Admin\"}"
+		}
+	]
+}

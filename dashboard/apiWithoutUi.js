@@ -15,6 +15,7 @@ let package = require('./package.json')
 swaggerDocument.info.version = package.version;
 app.use('/api-doc',swaggerUi.serve,swaggerUi.setup(swaggerDocument))
 
+// middleware
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(cors())

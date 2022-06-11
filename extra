@@ -32,29 +32,25 @@ DashBoard(Crud)
 Github
 --Deployment of app---
 Heroku
-
 Pm2
 Docker
 Nginx
-
 Login/Logout(JWT)
-GraphQl API
+Email Server(nodemailer)
 
+
+GraphQl API
 Chatapp
+ImageUpload
+
+Paytm-Payment
+
 -----EXTRA-------
 Jenkins
-RedisWithMongo
-ImageUpload
-Zomato App backend
-Oauth(with github)
-Oauth(with google)
-TelegramChat
-Paytm-Payment
-NodeJs with postgres
-FIREBASE
---------NOT---------
-React/Angular
-Html/css/jquery
+Oauth(with github)  > 1
+NodeJs with postgres > 2
+
+Error Middleware
 
 
 NodeJs
@@ -188,5 +184,18 @@ set key value
 get key
 del key
 FLUSHALL
+
+https://support.google.com/accounts/answer/185833?hl=en
+
+/////PM2////
+npm i -g pm2
+
+pm2 start filename
+pm2 status
+pm2 stop  filename
+
+//////////
+docker build . -t imagename
+docker run -p 3400:9800 imagename
 
 https://support.google.com/accounts/answer/185833?hl=en
