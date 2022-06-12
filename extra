@@ -37,19 +37,19 @@ Docker
 Nginx
 Login/Logout(JWT)
 Email Server(nodemailer)
-
-
 GraphQl API
 Chatapp
 ImageUpload
 
+NodeJs with postgres
 Paytm-Payment
 
 -----EXTRA-------
 Jenkins
 Oauth(with github)  > 1
-NodeJs with postgres > 2
+ > 2
 
+ 
 Error Middleware
 
 
@@ -199,3 +199,6 @@ docker build . -t imagename
 docker run -p 3400:9800 imagename
 
 https://support.google.com/accounts/answer/185833?hl=en
+
+dummy api
+> npx json-server --watch db.json --port 9870
