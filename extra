@@ -44,13 +44,6 @@ ImageUpload
 NodeJs with postgres
 Paytm-Payment
 
------EXTRA-------
-Jenkins
-Oauth(with github)  > 1
- > 2
-
- 
-Error Middleware
 
 
 NodeJs
@@ -202,3 +195,6 @@ https://support.google.com/accounts/answer/185833?hl=en
 
 dummy api
 > npx json-server --watch db.json --port 9870
+
+
+pg_ctl -D /usr/local/var/postgres start

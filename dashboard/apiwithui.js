@@ -41,6 +41,7 @@ app.get('/',(req,res)=>{
     })
 })
 
+
 app.get('/users',(req,res) => {
     let query = {};
     if(req.query.role && req.query.city){
